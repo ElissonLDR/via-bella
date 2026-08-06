@@ -188,6 +188,7 @@ function Index() {
             Um fornecedor de calçado feminino precisa entregar mais do que produto: precisa entregar
             previsibilidade de venda. É esse o compromisso da Via Bella com cada lojista.
           </p>
+          <img src={simbolo.url} alt="" className="mt-6 h-12 w-auto opacity-15 brightness-0" />
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {beneficios.map((b) => (
@@ -247,6 +248,7 @@ function Index() {
             Linhas desenvolvidas para conviverem na mesma vitrine: paleta harmônica, volumes atuais e
             faixas de uso complementares. Veja alguns dos modelos que compõem o mix.
           </p>
+          <img src={simbolo.url} alt="" className="mt-6 h-12 w-auto opacity-15 brightness-0" />
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {colecoes.map((c) => (
@@ -329,6 +331,7 @@ function Index() {
       {/* BLOCO 7 */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Como funciona</h2>
+        <img src={simbolo.url} alt="" className="mt-5 h-12 w-auto opacity-15 brightness-0" />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {passos.map((p) => (
             <div key={p.n} className="rounded-3xl border border-border bg-card/80 p-7">
@@ -343,6 +346,7 @@ function Index() {
       {/* BLOCO 8 FAQ */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Perguntas frequentes</h2>
+        <img src={simbolo.url} alt="" className="mt-5 h-12 w-auto opacity-15 brightness-0" />
         <div className="mt-8 space-y-3">
           {faq.map((f) => (
             <details
