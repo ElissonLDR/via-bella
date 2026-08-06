@@ -183,7 +183,6 @@ function Index() {
       {/* BLOCO 2 */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="max-w-2xl">
-          <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 02</p>
           <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Por que revender Via Bella?</h2>
           <p className="mt-4 text-[15px] text-muted-foreground">
             Um fornecedor de calçado feminino precisa entregar mais do que produto: precisa entregar
@@ -219,7 +218,6 @@ function Index() {
             />
           </div>
           <div className="p-6 sm:p-10">
-            <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 03</p>
             <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Marca pronta para a vitrine</h2>
             <p className="mt-4 text-[15px] text-muted-foreground">
               As imagens desta página são registros reais das nossas coleções e da forma como elas se
@@ -244,7 +242,6 @@ function Index() {
       {/* BLOCO 4 COLEÇÕES */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="max-w-2xl">
-          <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 04</p>
           <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Conheça nossas coleções</h2>
           <p className="mt-4 text-[15px] text-muted-foreground">
             Linhas desenvolvidas para conviverem na mesma vitrine: paleta harmônica, volumes atuais e
@@ -277,7 +274,6 @@ function Index() {
       {/* BLOCO 5 */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="rounded-[2.5rem] surface-dark p-8 sm:p-12">
-          <p className="text-[12px] uppercase tracking-[0.18em] text-primary-foreground/70">Bloco 05</p>
           <h2 className="mt-3 max-w-xl text-[1.75rem] text-dark-foreground sm:text-[2.1rem]">
             O que você encontra na Via Bella
           </h2>
@@ -300,7 +296,6 @@ function Index() {
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
           <div>
-            <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 06</p>
             <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">
               Por que lojistas escolhem a Via Bella
             </h2>
@@ -333,7 +328,6 @@ function Index() {
 
       {/* BLOCO 7 */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
-        <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 07</p>
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Como funciona</h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {passos.map((p) => (
@@ -348,7 +342,6 @@ function Index() {
 
       {/* BLOCO 8 FAQ */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
-        <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 08</p>
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Perguntas frequentes</h2>
         <div className="mt-8 space-y-3">
           {faq.map((f) => (
