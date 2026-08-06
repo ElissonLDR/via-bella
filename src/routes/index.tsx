@@ -166,9 +166,9 @@ function Index() {
             <h1 className="mt-6 max-w-2xl text-[2rem] leading-[1.12] text-foreground sm:text-[2.7rem]">
               Leve para sua loja a marca que a sua cliente já procura.
             </h1>
-            <p className="mt-5 max-w-xl text-[15px] text-foreground/80">
+            <p className="mt-5 max-w-xl text-[16px] font-medium leading-relaxed text-foreground drop-shadow-sm">
               Via Bella desenvolve calçados femininos com design atual, acabamento cuidadoso e
-              modelos que acompanham as tendências de cada estação — a combinação que sustenta
+              modelos que acompanham as tendências de cada estação, a combinação que sustenta
               vitrines desejadas e giro consistente para o lojista.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -208,7 +208,7 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOCO 3 — PROVA SOCIAL */}
+      {/* BLOCO 3 PROVA SOCIAL */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="grid items-center gap-8 overflow-hidden rounded-[2.5rem] border border-border bg-card/80 p-6 sm:p-10 lg:grid-cols-2">
           <img
@@ -221,7 +221,7 @@ function Index() {
             <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Marca pronta para a vitrine</h2>
             <p className="mt-4 text-[15px] text-muted-foreground">
               As imagens desta página são registros reais das nossas coleções e da forma como elas se
-              apresentam no ponto de venda — sem montagem, sem promessa fora da realidade.
+              apresentam no ponto de venda, sem montagem, sem promessa fora da realidade.
             </p>
             <ul className="mt-6 space-y-3 text-[15px]">
               {[
@@ -239,7 +239,7 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOCO 4 — COLEÇÕES */}
+      {/* BLOCO 4 COLEÇÕES */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="max-w-2xl">
           <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 04</p>
@@ -318,7 +318,7 @@ function Index() {
             <p>
               O atendimento é direto e próximo: você fala com quem conhece o produto, recebe
               orientação de mix conforme o perfil da sua região e conta com apoio para fortalecer a
-              venda no balcão — não apenas para fechar um pedido.
+              venda no balcão, não apenas para fechar um pedido.
             </p>
             <div className="pt-2">
               <CtaButton href="#cadastro" variant="light">
@@ -344,7 +344,7 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOCO 8 — FAQ */}
+      {/* BLOCO 8 FAQ */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 08</p>
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Perguntas frequentes</h2>
