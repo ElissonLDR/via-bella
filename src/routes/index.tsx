@@ -15,7 +15,7 @@ import logo from "@/assets/Logotipo_Via_Bella.svg.asset.json";
 import simbolo from "@/assets/Simbolo.svg.asset.json";
 import heroDesktop from "@/assets/banner-hero-desktop.png.asset.json";
 import heroMobile from "@/assets/banner-hero-mobile.png.asset.json";
-import loja from "@/assets/imagem-secao-2.png.asset.json";
+import loja from "@/assets/imagem-secao-2-v2.png.asset.json";
 import prod1 from "@/assets/Imagem_produtos_1.jpg.asset.json";
 import prod2 from "@/assets/Imagem_produtos_2.jpg.asset.json";
 import prod3 from "@/assets/Imagem_produtos_3.jpg.asset.json";
@@ -210,13 +210,15 @@ function Index() {
 
       {/* BLOCO 3 PROVA SOCIAL */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
-        <div className="grid items-center gap-8 overflow-hidden rounded-[2.5rem] border border-border bg-card/80 p-6 sm:p-10 lg:grid-cols-2">
-          <img
-            src={loja.url}
-            alt="Coleções Via Bella expostas em vitrine de loja"
-            className="h-full max-h-[420px] w-full rounded-3xl object-cover"
-          />
-          <div>
+        <div className="grid items-stretch overflow-hidden rounded-[2.5rem] border border-border bg-card/80 lg:grid-cols-[auto_1fr]">
+          <div className="relative aspect-square min-h-[300px] w-full">
+            <img
+              src={loja.url}
+              alt="Coleções Via Bella expostas em vitrine de loja"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+          </div>
+          <div className="p-6 sm:p-10">
             <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 03</p>
             <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Marca pronta para a vitrine</h2>
             <p className="mt-4 text-[15px] text-muted-foreground">
