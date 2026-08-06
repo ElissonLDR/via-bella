@@ -209,7 +209,7 @@ function Index() {
 
       {/* BLOCO 3 PROVA SOCIAL */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
-        <div className="grid items-stretch overflow-hidden rounded-[2.5rem] border border-border bg-card/80 lg:grid-cols-2">
+        <div className="grid items-center overflow-hidden rounded-[2.5rem] border border-border bg-card/80 lg:grid-cols-2">
           <div className="relative flex min-h-[300px] w-full items-center justify-center">
             <img
               src={loja.url}
