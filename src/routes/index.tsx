@@ -147,7 +147,7 @@ function Index() {
 
       {/* HERO */}
       <section className="mx-auto w-[98%] pb-16 pt-2">
-        <div className="relative flex min-h-[80vh] items-center overflow-hidden rounded-[2.5rem] shadow-soft">
+        <div className="relative flex min-h-screen items-start overflow-hidden rounded-[2.5rem] shadow-soft sm:min-h-[80vh] sm:items-center">
           <img
             src={heroDesktop.url}
             alt="Cliente usando papete plataforma Via Bella em couro caramelo"
@@ -159,7 +159,7 @@ function Index() {
             className="absolute inset-0 h-full w-full object-cover sm:hidden"
           />
           
-          <div className="relative w-full px-7 py-14 sm:px-12 lg:px-16 lg:py-20">
+          <div className="relative w-full px-7 pb-14 pt-20 sm:px-12 sm:py-14 lg:px-16 lg:py-20">
             <span className="inline-block rounded-full border border-foreground/25 bg-background/50 px-4 py-1.5 text-[12px] uppercase tracking-[0.18em] text-foreground/80">
               Programa de revenda
             </span>
