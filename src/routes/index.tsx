@@ -166,9 +166,9 @@ function Index() {
             <h1 className="mt-6 max-w-2xl text-[2rem] leading-[1.12] text-foreground sm:text-[2.7rem]">
               Leve para sua loja a marca que a sua cliente já procura.
             </h1>
-            <p className="mt-5 max-w-xl text-[15px] text-foreground/80">
+            <p className="mt-5 max-w-xl text-[16px] font-medium leading-relaxed text-foreground drop-shadow-sm">
               Via Bella desenvolve calçados femininos com design atual, acabamento cuidadoso e
-              modelos que acompanham as tendências de cada estação — a combinação que sustenta
+              modelos que acompanham as tendências de cada estação, a combinação que sustenta
               vitrines desejadas e giro consistente para o lojista.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -221,7 +221,7 @@ function Index() {
             <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Marca pronta para a vitrine</h2>
             <p className="mt-4 text-[15px] text-muted-foreground">
               As imagens desta página são registros reais das nossas coleções e da forma como elas se
-              apresentam no ponto de venda — sem montagem, sem promessa fora da realidade.
+              apresentam no ponto de venda, sem montagem, sem promessa fora da realidade.
             </p>
             <ul className="mt-6 space-y-3 text-[15px]">
               {[
