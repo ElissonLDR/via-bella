@@ -151,12 +151,12 @@ function Index() {
           <img
             src={heroDesktop.url}
             alt="Cliente usando papete plataforma Via Bella em couro caramelo"
-            className="absolute inset-0 hidden h-full w-full object-cover sm:block"
+            className="absolute inset-0 hidden h-full w-full object-cover object-bottom sm:block"
           />
           <img
             src={heroMobile.url}
             alt="Cliente usando papete plataforma Via Bella em couro caramelo"
-            className="absolute inset-0 h-full w-full object-cover sm:hidden"
+            className="absolute inset-0 h-full w-full object-cover object-bottom sm:hidden"
           />
           
           <div className="relative mx-auto w-full max-w-[1440px] px-7 pb-14 pt-6 sm:px-12 sm:py-14 lg:px-16 lg:py-20">
