@@ -30,11 +30,11 @@ export const Route = createFileRoute("/")({
         content:
           "Leve para sua loja uma marca desejada pelas consumidoras. Coleções femininas de calçados com design atual, acabamento cuidadoso e giro rápido. Cadastre-se para revender Via Bella.",
       },
-      { property: "og:title", content: "Via Bella | Seja revendedor oficial" },
+      { property: "og:title", content: "Via Bella | Seja revendedor oficial de calçados femininos" },
       {
         property: "og:description",
         content:
-          "Calçados femininos com design atual e acabamento cuidadoso para lojistas que querem vitrines desejadas.",
+          "Leve para sua loja uma marca desejada pelas consumidoras. Coleções femininas de calçados com design atual, acabamento cuidadoso e giro rápido. Cadastre-se para revender Via Bella.",
       },
       { property: "og:image", content: `https://id-preview--dc4ba6b6-7fb5-4edb-956e-098a075c1fb4.lovable.app${heroDesktop.url}` },
       { name: "twitter:image", content: `https://id-preview--dc4ba6b6-7fb5-4edb-956e-098a075c1fb4.lovable.app${heroDesktop.url}` },
