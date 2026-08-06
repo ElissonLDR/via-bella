@@ -147,7 +147,7 @@ function Index() {
 
       {/* HERO */}
       <section className="mx-auto w-[98%] pb-16 pt-2">
-        <div className="relative flex min-h-[80vh] items-center overflow-hidden rounded-[2.5rem] shadow-soft">
+        <div className="relative flex min-h-screen items-start overflow-hidden rounded-[2.5rem] shadow-soft sm:min-h-[80vh] sm:items-center">
           <img
             src={heroDesktop.url}
             alt="Cliente usando papete plataforma Via Bella em couro caramelo"
