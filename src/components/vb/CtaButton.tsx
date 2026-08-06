@@ -22,7 +22,7 @@ export function CtaButton({
   const styles =
     variant === "primary"
       ? "bg-primary text-primary-foreground hover:bg-dark hover:text-dark-foreground"
-      : "bg-card text-foreground hover:bg-primary hover:text-primary-foreground";
+      : "bg-dark text-dark-foreground hover:bg-primary hover:text-primary-foreground";
 
   const inner = (
     <>
@@ -32,7 +32,7 @@ export function CtaButton({
           "flex h-10 w-10 shrink-0 items-center justify-center rounded-full transition-colors duration-300",
           variant === "primary"
             ? "bg-primary-foreground/20 group-hover:bg-primary"
-            : "bg-primary text-primary-foreground group-hover:bg-card group-hover:text-foreground",
+            : "bg-primary text-primary-foreground group-hover:bg-dark group-hover:text-dark-foreground",
         )}
       >
         <ArrowRight className="h-4 w-4" strokeWidth={2.2} />
