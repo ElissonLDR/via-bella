@@ -215,7 +215,7 @@ function Index() {
             <img
               src={loja.url}
               alt="Coleções Via Bella expostas em vitrine de loja"
-              className="block h-full w-full object-contain"
+              className="block h-full w-full rounded-[2.5rem] object-contain"
             />
           </div>
           <div className="p-6 sm:p-10">
