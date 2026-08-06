@@ -138,7 +138,7 @@ const faq = [
 function Index() {
   return (
     <div className="min-h-screen">
-      <header className="mx-auto flex max-w-6xl items-center justify-between px-5 py-6">
+      <header className="mx-auto flex max-w-[1440px] items-center justify-between px-5 py-6">
         <img src={logo.url} alt="Via Bella" className="h-9 w-auto brightness-0 opacity-80" />
         <CtaButton href="#cadastro" variant="light" className="hidden sm:inline-flex">
           Quero revender
@@ -146,7 +146,7 @@ function Index() {
       </header>
 
       {/* HERO */}
-      <section className="mx-auto max-w-6xl px-5 pb-16 pt-4">
+      <section className="mx-auto max-w-[1440px] px-5 pb-16 pt-4">
         <div className="overflow-hidden rounded-[2.5rem] surface-dark shadow-soft">
           <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_1fr]">
             <div className="px-7 pt-10 pb-2 sm:px-12 lg:py-14">
@@ -182,7 +182,7 @@ function Index() {
       </section>
 
       {/* BLOCO 2 */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="max-w-2xl">
           <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 02</p>
           <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Por que revender Via Bella?</h2>
@@ -208,7 +208,7 @@ function Index() {
       </section>
 
       {/* BLOCO 3 — PROVA SOCIAL */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="grid items-center gap-8 overflow-hidden rounded-[2.5rem] border border-border bg-card/80 p-6 sm:p-10 lg:grid-cols-2">
           <img
             src={loja.url}
@@ -243,7 +243,7 @@ function Index() {
       </section>
 
       {/* BLOCO 4 — COLEÇÕES */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="max-w-2xl">
           <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 04</p>
           <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Conheça nossas coleções</h2>
@@ -272,7 +272,7 @@ function Index() {
       </section>
 
       {/* BLOCO 5 */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="rounded-[2.5rem] surface-dark p-8 sm:p-12">
           <p className="text-[12px] uppercase tracking-[0.18em] text-primary-foreground/70">Bloco 05</p>
           <h2 className="mt-3 max-w-xl text-[1.75rem] text-dark-foreground sm:text-[2.1rem]">
@@ -294,7 +294,7 @@ function Index() {
       </section>
 
       {/* BLOCO 6 */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr]">
           <div>
             <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 06</p>
@@ -329,7 +329,7 @@ function Index() {
       </section>
 
       {/* BLOCO 7 */}
-      <section className="mx-auto max-w-6xl px-5 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16">
         <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 07</p>
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Como funciona</h2>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
@@ -344,7 +344,7 @@ function Index() {
       </section>
 
       {/* BLOCO 8 — FAQ */}
-      <section className="mx-auto max-w-4xl px-5 py-16">
+      <section className="mx-auto max-w-[1440px] px-5 py-16">
         <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 08</p>
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Perguntas frequentes</h2>
         <div className="mt-8 space-y-3">
@@ -363,7 +363,7 @@ function Index() {
       </section>
 
       {/* BLOCO FINAL */}
-      <section id="cadastro" className="mx-auto max-w-6xl px-5 py-16">
+      <section id="cadastro" className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="grid items-center gap-10 rounded-[2.5rem] surface-dark p-8 sm:p-12 lg:grid-cols-2">
           <div>
             <h2 className="text-[1.9rem] text-dark-foreground sm:text-[2.3rem]">
@@ -384,7 +384,7 @@ function Index() {
         </div>
       </section>
 
-      <footer className="mx-auto max-w-6xl px-5 pb-12 pt-4 text-center">
+      <footer className="mx-auto max-w-[1440px] px-5 pb-12 pt-4 text-center">
         <img src={logo.url} alt="Via Bella" className="mx-auto h-8 w-auto opacity-60 brightness-0" />
         <p className="mt-4 text-[13px] text-muted-foreground">
           Via Bella · Calçados femininos · Atendimento exclusivo para lojistas
