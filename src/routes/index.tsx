@@ -146,36 +146,35 @@ function Index() {
       </header>
 
       {/* HERO */}
-      <section className="mx-auto max-w-[1440px] px-5 pb-16 pt-4">
-        <div className="overflow-hidden rounded-[2.5rem] surface-dark shadow-soft">
-          <div className="grid items-center gap-8 lg:grid-cols-[1.05fr_1fr]">
-            <div className="px-7 pt-10 pb-2 sm:px-12 lg:py-14">
-              <span className="inline-block rounded-full border border-dark-foreground/25 px-4 py-1.5 text-[12px] uppercase tracking-[0.18em] text-dark-foreground/80">
-                Programa de revenda
-              </span>
-              <h1 className="mt-6 text-[2rem] leading-[1.12] sm:text-[2.7rem]">
-                Leve para sua loja a marca que a sua cliente já procura.
-              </h1>
-              <p className="mt-5 max-w-xl text-[15px] text-dark-foreground/80">
-                Via Bella desenvolve calçados femininos com design atual, acabamento cuidadoso e
-                modelos que acompanham as tendências de cada estação — a combinação que sustenta
-                vitrines desejadas e giro consistente para o lojista.
-              </p>
-              <div className="mt-8 flex flex-wrap items-center gap-4 pb-8 lg:pb-0">
-                <CtaButton href="#cadastro">Quero revender Via Bella</CtaButton>
-              </div>
-            </div>
-            <div className="relative h-[320px] lg:h-[520px]">
-              <img
-                src={heroDesktop.url}
-                alt="Cliente usando papete plataforma Via Bella em couro caramelo"
-                className="hidden h-full w-full object-cover sm:block"
-              />
-              <img
-                src={heroMobile.url}
-                alt="Cliente usando papete plataforma Via Bella em couro caramelo"
-                className="h-full w-full object-cover sm:hidden"
-              />
+      <section className="mx-auto w-[98%] pb-16 pt-2">
+        <div className="relative flex min-h-[80vh] items-center overflow-hidden rounded-[2.5rem] shadow-soft">
+          <img
+            src={heroDesktop.url}
+            alt="Cliente usando papete plataforma Via Bella em couro caramelo"
+            className="absolute inset-0 hidden h-full w-full object-cover sm:block"
+          />
+          <img
+            src={heroMobile.url}
+            alt="Cliente usando papete plataforma Via Bella em couro caramelo"
+            className="absolute inset-0 h-full w-full object-cover sm:hidden"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/92 via-background/70 to-background/10" />
+          <div className="relative w-full px-7 py-14 sm:px-12 lg:px-16 lg:py-20">
+            <span className="inline-block rounded-full border border-foreground/25 bg-background/50 px-4 py-1.5 text-[12px] uppercase tracking-[0.18em] text-foreground/80">
+              Programa de revenda
+            </span>
+            <h1 className="mt-6 max-w-2xl text-[2rem] leading-[1.12] text-foreground sm:text-[2.7rem]">
+              Leve para sua loja a marca que a sua cliente já procura.
+            </h1>
+            <p className="mt-5 max-w-xl text-[15px] text-foreground/80">
+              Via Bella desenvolve calçados femininos com design atual, acabamento cuidadoso e
+              modelos que acompanham as tendências de cada estação — a combinação que sustenta
+              vitrines desejadas e giro consistente para o lojista.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <CtaButton href="#cadastro" variant="light">
+                Quero revender Via Bella
+              </CtaButton>
             </div>
           </div>
         </div>
@@ -193,16 +192,18 @@ function Index() {
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {beneficios.map((b) => (
-            <article
+            <div
               key={b.title}
-              className="rounded-3xl border border-border bg-card/80 p-7 transition-shadow duration-300 hover:shadow-soft"
+              className="rounded-3xl bg-gradient-to-br from-primary/70 via-primary/20 to-primary/60 p-[1.5px]"
             >
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/15 text-primary">
-                <b.icon className="h-5 w-5" />
-              </span>
-              <h3 className="mt-5 text-[1.05rem]">{b.title}</h3>
-              <p className="mt-3 text-[15px] text-muted-foreground">{b.text}</p>
-            </article>
+              <article className="h-full rounded-3xl surface-dark p-7">
+                <span className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/25 text-primary">
+                  <b.icon className="h-5 w-5" />
+                </span>
+                <h3 className="mt-5 text-[1.05rem] text-dark-foreground">{b.title}</h3>
+                <p className="mt-3 text-[15px] text-dark-foreground/75">{b.text}</p>
+              </article>
+            </div>
           ))}
         </div>
       </section>
@@ -234,10 +235,6 @@ function Index() {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 rounded-2xl bg-secondary px-5 py-4 text-[14px] text-muted-foreground">
-              Dados de tempo de mercado, alcance digital e depoimentos de lojistas:{" "}
-              <strong className="text-foreground">confirmar com a equipe comercial.</strong>
-            </p>
           </div>
         </div>
       </section>
@@ -254,19 +251,23 @@ function Index() {
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {colecoes.map((c) => (
-            <article key={c.cat} className="group overflow-hidden rounded-3xl border border-border bg-card">
-              <div className="overflow-hidden">
+            <div
+              key={c.cat}
+              className="rounded-3xl bg-gradient-to-br from-primary/70 via-primary/20 to-primary/60 p-[1.5px]"
+            >
+              <article className="relative flex aspect-[9/16] items-end overflow-hidden rounded-3xl">
                 <img
                   src={c.img}
                   alt={`${c.cat} Via Bella`}
-                  className="aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="absolute inset-0 h-full w-full object-cover"
                 />
-              </div>
-              <div className="p-6">
-                <h3 className="text-[1.05rem]">{c.cat}</h3>
-                <p className="mt-2 text-[14px] text-muted-foreground">{c.d}</p>
-              </div>
-            </article>
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/45 to-dark/10" />
+                <div className="relative p-6">
+                  <h3 className="text-[1.05rem] text-dark-foreground">{c.cat}</h3>
+                  <p className="mt-2 text-[14px] text-dark-foreground/80">{c.d}</p>
+                </div>
+              </article>
+            </div>
           ))}
         </div>
       </section>
@@ -282,7 +283,7 @@ function Index() {
             {diferenciais.map((d) => (
               <div
                 key={d.t}
-                className="rounded-3xl border border-dark-foreground/15 bg-dark-foreground/5 p-6 transition-colors duration-300 hover:border-primary/60"
+                className="rounded-3xl border border-dark-foreground/15 bg-dark-foreground/5 p-6"
               >
                 <d.icon className="h-5 w-5 text-primary" />
                 <h3 className="mt-4 text-[1rem] text-dark-foreground">{d.t}</h3>
