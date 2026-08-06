@@ -208,7 +208,7 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOCO 3 — PROVA SOCIAL */}
+      {/* BLOCO 3 PROVA SOCIAL */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="grid items-center gap-8 overflow-hidden rounded-[2.5rem] border border-border bg-card/80 p-6 sm:p-10 lg:grid-cols-2">
           <img
@@ -239,7 +239,7 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOCO 4 — COLEÇÕES */}
+      {/* BLOCO 4 COLEÇÕES */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="max-w-2xl">
           <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 04</p>
@@ -318,7 +318,7 @@ function Index() {
             <p>
               O atendimento é direto e próximo: você fala com quem conhece o produto, recebe
               orientação de mix conforme o perfil da sua região e conta com apoio para fortalecer a
-              venda no balcão — não apenas para fechar um pedido.
+              venda no balcão, não apenas para fechar um pedido.
             </p>
             <div className="pt-2">
               <CtaButton href="#cadastro" variant="light">
@@ -344,7 +344,7 @@ function Index() {
         </div>
       </section>
 
-      {/* BLOCO 8 — FAQ */}
+      {/* BLOCO 8 FAQ */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <p className="text-[12px] uppercase tracking-[0.18em] text-primary">Bloco 08</p>
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Perguntas frequentes</h2>
