@@ -15,7 +15,7 @@ import logo from "@/assets/Logotipo_Via_Bella.svg.asset.json";
 import simbolo from "@/assets/Simbolo.svg.asset.json";
 import heroDesktop from "@/assets/banner-hero-desktop.png.asset.json";
 import heroMobile from "@/assets/banner-hero-mobile.png.asset.json";
-import loja from "@/assets/imagem-secao-2-v2.png.asset.json";
+import loja from "@/assets/imagem-secao-2.png.asset.json";
 import prod1 from "@/assets/Imagem_produtos_1.jpg.asset.json";
 import prod2 from "@/assets/Imagem_produtos_2.jpg.asset.json";
 import prod3 from "@/assets/Imagem_produtos_3.jpg.asset.json";
@@ -210,12 +210,12 @@ function Index() {
 
       {/* BLOCO 3 PROVA SOCIAL */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
-        <div className="grid items-center overflow-hidden rounded-[2.5rem] border border-border bg-card/80 lg:grid-cols-2">
-          <div className="relative flex min-h-[300px] w-full items-center justify-center">
+        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+          <div className="aspect-square w-full">
             <img
               src={loja.url}
               alt="Coleções Via Bella expostas em vitrine de loja"
-              className="h-full w-full object-contain"
+              className="block h-full w-full object-contain"
             />
           </div>
           <div className="p-6 sm:p-10">
