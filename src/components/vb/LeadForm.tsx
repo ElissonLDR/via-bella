@@ -15,7 +15,7 @@ export function LeadForm() {
 
   if (sent) {
     return (
-      <div className="rounded-3xl border border-border bg-card p-8 text-center shadow-soft">
+      <div className="rounded-3xl border border-border bg-card p-8 text-center text-foreground shadow-soft">
         <h3 className="text-xl">Recebemos seu cadastro</h3>
         <p className="mt-3 text-[15px] text-muted-foreground">
           Nossa equipe comercial entrará em contato pelo WhatsApp informado para apresentar as
@@ -27,7 +27,7 @@ export function LeadForm() {
 
   return (
     <form
-      className="rounded-3xl border border-border bg-card p-6 shadow-soft sm:p-8"
+      className="rounded-3xl border border-border bg-card p-6 text-foreground shadow-soft sm:p-8"
       onSubmit={(e) => {
         e.preventDefault();
         setSent(true);
