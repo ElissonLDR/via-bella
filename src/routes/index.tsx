@@ -158,7 +158,7 @@ function Index() {
             alt="Cliente usando papete plataforma Via Bella em couro caramelo"
             className="absolute inset-0 h-full w-full object-cover sm:hidden"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/92 via-background/70 to-background/10" />
+          
           <div className="relative w-full px-7 py-14 sm:px-12 lg:px-16 lg:py-20">
             <span className="inline-block rounded-full border border-foreground/25 bg-background/50 px-4 py-1.5 text-[12px] uppercase tracking-[0.18em] text-foreground/80">
               Programa de revenda
