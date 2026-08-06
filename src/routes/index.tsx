@@ -159,7 +159,7 @@ function Index() {
             className="absolute inset-0 h-full w-full object-cover sm:hidden"
           />
           
-          <div className="relative w-full px-7 pb-14 pt-6 sm:px-12 sm:py-14 lg:px-16 lg:py-20">
+          <div className="relative mx-auto w-full max-w-[1440px] px-7 pb-14 pt-6 sm:px-12 sm:py-14 lg:px-16 lg:py-20">
             <span className="inline-block rounded-full border border-foreground/25 bg-background/50 px-4 py-1.5 text-[12px] uppercase tracking-[0.18em] text-foreground/80">
               Programa de revenda
             </span>
