@@ -255,7 +255,7 @@ function Index() {
               key={c.cat}
               className="rounded-3xl bg-gradient-to-br from-primary/70 via-primary/20 to-primary/60 p-[1.5px]"
             >
-              <article className="relative flex aspect-[9/16] items-end overflow-hidden rounded-3xl">
+              <article className="relative flex aspect-[3/4] items-end overflow-hidden rounded-3xl">
                 <img
                   src={c.img}
                   alt={`${c.cat} Via Bella`}
@@ -263,7 +263,7 @@ function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/45 to-dark/10" />
                 <div className="relative p-6">
-                  <h3 className="text-[1.05rem] text-dark-foreground">{c.cat}</h3>
+                  <h3 className="font-display text-[1.35rem] leading-snug text-dark-foreground">{c.cat}</h3>
                   <p className="mt-2 text-[14px] text-dark-foreground/80">{c.d}</p>
                 </div>
               </article>
