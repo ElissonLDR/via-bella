@@ -210,11 +210,11 @@ function Index() {
       {/* BLOCO 3 PROVA SOCIAL */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <div className="grid items-stretch overflow-hidden rounded-[2.5rem] border border-border bg-card/80 lg:grid-cols-2">
-          <div className="relative min-h-[300px] w-full overflow-hidden rounded-[2.5rem]">
+          <div className="relative flex min-h-[300px] w-full items-center justify-center">
             <img
               src={loja.url}
               alt="Coleções Via Bella expostas em vitrine de loja"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-contain"
             />
           </div>
           <div className="p-6 sm:p-10">
