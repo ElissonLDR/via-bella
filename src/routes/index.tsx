@@ -11,15 +11,15 @@ import {
 } from "lucide-react";
 import { CtaButton } from "@/components/vb/CtaButton";
 import { LeadForm } from "@/components/vb/LeadForm";
-import logo from "@/assets/Logotipo_Via_Bella.svg.asset.json";
-import simbolo from "@/assets/Simbolo.svg.asset.json";
-import heroDesktop from "@/assets/banner-hero-desktop.png.asset.json";
-import heroMobile from "@/assets/banner-hero-mobile.png.asset.json";
-import loja from "@/assets/imagem-secao-2.png.asset.json";
-import prod1 from "@/assets/Imagem_produtos_1.jpg.asset.json";
-import prod2 from "@/assets/Imagem_produtos_2.jpg.asset.json";
-import prod3 from "@/assets/Imagem_produtos_3.jpg.asset.json";
-import prod4 from "@/assets/Imagem_produtos_4.jpg.asset.json";
+import logo from "@/assets/logotipo-via-bella.svg";
+import simbolo from "@/assets/simbolo.svg";
+import heroDesktop from "@/assets/banner-hero-desktop.webp";
+import heroMobile from "@/assets/banner-hero-mobile.webp";
+import loja from "@/assets/imagem-secao-2.png";
+import prod1 from "@/assets/imagem-papetes-plataforma.webp";
+import prod2 from "@/assets/imagem-slides-monograma.webp";
+import prod3 from "@/assets/imagem-tamancos-flats.webp";
+import prod4 from "@/assets/imagem-rasteiras-trancadas.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -36,8 +36,8 @@ export const Route = createFileRoute("/")({
         content:
           "Leve para sua loja uma marca desejada pelas consumidoras. Coleções femininas de calçados com design atual, acabamento cuidadoso e giro rápido. Cadastre-se para revender Via Bella.",
       },
-      { property: "og:image", content: `https://id-preview--dc4ba6b6-7fb5-4edb-956e-098a075c1fb4.lovable.app${heroDesktop.url}` },
-      { name: "twitter:image", content: `https://id-preview--dc4ba6b6-7fb5-4edb-956e-098a075c1fb4.lovable.app${heroDesktop.url}` },
+      { property: "og:image", content: heroDesktop },
+      { name: "twitter:image", content: heroDesktop },
     ],
   }),
   component: Index,
@@ -47,7 +47,7 @@ const beneficios = [
   {
     icon: Sparkles,
     title: "Leitura de tendência aplicada",
-    text: "Cada coleção nasce da observação do que a consumidora já está procurando: plataformas, tiras cruzadas, monogramas e acabamentos em metal dourado.",
+    text: "Cada coleção nasce de pesquisa de mercado, tendências e algumas inspirações de grandes marcas.",
   },
   {
     icon: Gem,
@@ -61,13 +61,13 @@ const beneficios = [
   },
   {
     icon: Footprints,
-    title: "Conforto como argumento de venda",
-    text: "Solados leves, entressolas macias e forma amigável ao pé: a cliente experimenta, sente a diferença e a conversão acontece no balcão.",
+    title: "Aliando conforto e tendência",
+    text: "Trabalhamos com solados, micro expandido, TR e PU, que proporcionam muito conforto ao calçar, sem esquecer das palmilhas confort.",
   },
   {
     icon: RefreshCw,
     title: "Renovação constante",
-    text: "Novidades entram em ciclo contínuo, mantendo sua vitrine sempre atual sem depender de uma única coleção por temporada.",
+    text: "Novidades entram em ciclo contínuo, acompanhando a moda atemporal, sempre atentos às estações.",
   },
   {
     icon: ShieldCheck,
@@ -78,7 +78,7 @@ const beneficios = [
 
 const diferenciais = [
   { icon: Gem, t: "Design exclusivo", d: "Desenhos próprios, com identidade reconhecível na prateleira." },
-  { icon: Ruler, t: "Acabamento", d: "Costuras, recortes e ferragens conferidos peça por peça." },
+  { icon: Ruler, t: "Acabamento", d: "Sendo o último dos processos de fabricação, é conferida a colagem, costuras e metais, para satisfação do cliente." },
   { icon: Sparkles, t: "Tendências", d: "Formas e volumes alinhados ao momento da moda feminina." },
   { icon: Footprints, t: "Conforto", d: "Plataformas leves e palmilhas macias para uso prolongado." },
   { icon: ShieldCheck, t: "Qualidade", d: "Materiais selecionados com padrão constante entre os pares." },
@@ -89,22 +89,22 @@ const diferenciais = [
 
 const colecoes = [
   {
-    img: prod1.url,
+    img: prod1,
     cat: "Papetes plataforma",
     d: "Tiras cruzadas em couro caramelo com ferragem dourada e plataforma alta.",
   },
   {
-    img: prod2.url,
+    img: prod2,
     cat: "Slides monograma",
     d: "Estampa exclusiva em base off-white, um dos modelos de maior apelo visual.",
   },
   {
-    img: prod3.url,
+    img: prod3,
     cat: "Tamancos & flats",
     d: "Preto com detalhe em brilho na lateral do solado: versátil e fácil de vender.",
   },
   {
-    img: prod4.url,
+    img: prod4,
     cat: "Rasteiras trançadas",
     d: "Tiras trançadas bicolor sobre solado confortável para o dia a dia.",
   },
@@ -139,7 +139,7 @@ function Index() {
   return (
     <div className="min-h-screen">
       <header className="mx-auto flex max-w-[1440px] items-center justify-between px-5 py-6">
-        <img src={logo.url} alt="Via Bella" className="h-9 w-auto brightness-0 opacity-80" />
+        <img src={logo} alt="Via Bella" className="h-9 w-auto brightness-0 opacity-80" />
         <CtaButton href="#cadastro" variant="light" className="hidden sm:inline-flex">
           Quero revender
         </CtaButton>
@@ -149,12 +149,12 @@ function Index() {
       <section className="mx-auto w-[98%] pb-16 pt-0">
         <div className="relative flex min-h-[120vh] items-start overflow-hidden rounded-[2.5rem] shadow-soft sm:min-h-[80vh] sm:items-center">
           <img
-            src={heroDesktop.url}
+            src={heroDesktop}
             alt="Cliente usando papete plataforma Via Bella em couro caramelo"
             className="absolute inset-0 hidden h-full w-full object-cover object-bottom sm:block"
           />
           <img
-            src={heroMobile.url}
+            src={heroMobile}
             alt="Cliente usando papete plataforma Via Bella em couro caramelo"
             className="absolute inset-0 h-full w-full object-cover object-bottom sm:hidden"
           />
@@ -188,7 +188,7 @@ function Index() {
             Um fornecedor de calçado feminino precisa entregar mais do que produto: precisa entregar
             previsibilidade de venda. É esse o compromisso da Via Bella com cada lojista.
           </p>
-          <img src={simbolo.url} alt="" className="mt-6 h-12 w-auto opacity-15 brightness-0" />
+          <img src={simbolo} alt="" className="mt-6 h-12 w-auto opacity-15 brightness-0" />
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {beneficios.map((b) => (
@@ -213,7 +213,7 @@ function Index() {
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
           <div className="aspect-square w-full">
             <img
-              src={loja.url}
+              src={loja}
               alt="Coleções Via Bella expostas em vitrine de loja"
               className="block h-full w-full rounded-[2.5rem] object-contain"
             />
@@ -248,7 +248,7 @@ function Index() {
             Linhas desenvolvidas para conviverem na mesma vitrine: paleta harmônica, volumes atuais e
             faixas de uso complementares. Veja alguns dos modelos que compõem o mix.
           </p>
-          <img src={simbolo.url} alt="" className="mt-6 h-12 w-auto opacity-15 brightness-0" />
+          <img src={simbolo} alt="" className="mt-6 h-12 w-auto opacity-15 brightness-0" />
         </div>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {colecoes.map((c) => (
@@ -301,7 +301,7 @@ function Index() {
             <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">
               Por que lojistas escolhem a Via Bella
             </h2>
-            <img src={simbolo.url} alt="" className="mt-8 h-16 w-auto opacity-20 brightness-0" />
+            <img src={simbolo} alt="" className="mt-8 h-16 w-auto opacity-20 brightness-0" />
           </div>
           <div className="space-y-5 text-[15px] text-muted-foreground">
             <p>
@@ -331,7 +331,7 @@ function Index() {
       {/* BLOCO 7 */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Como funciona</h2>
-        <img src={simbolo.url} alt="" className="mt-5 h-12 w-auto opacity-15 brightness-0" />
+        <img src={simbolo} alt="" className="mt-5 h-12 w-auto opacity-15 brightness-0" />
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {passos.map((p) => (
             <div key={p.n} className="rounded-3xl border border-border bg-card/80 p-7">
@@ -346,7 +346,7 @@ function Index() {
       {/* BLOCO 8 FAQ */}
       <section className="mx-auto max-w-[1440px] px-5 py-16">
         <h2 className="mt-3 text-[1.75rem] sm:text-[2.1rem]">Perguntas frequentes</h2>
-        <img src={simbolo.url} alt="" className="mt-5 h-12 w-auto opacity-15 brightness-0" />
+        <img src={simbolo} alt="" className="mt-5 h-12 w-auto opacity-15 brightness-0" />
         <div className="mt-8 space-y-3">
           {faq.map((f) => (
             <details
@@ -385,7 +385,7 @@ function Index() {
       </section>
 
       <footer className="mx-auto max-w-[1440px] px-5 pb-12 pt-4 text-center">
-        <img src={logo.url} alt="Via Bella" className="mx-auto h-8 w-auto opacity-60 brightness-0" />
+        <img src={logo} alt="Via Bella" className="mx-auto h-8 w-auto opacity-60 brightness-0" />
         <p className="mt-4 text-[13px] text-muted-foreground">
           Via Bella · Calçados femininos · Atendimento exclusivo para lojistas
         </p>
